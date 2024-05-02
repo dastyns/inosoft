@@ -15,6 +15,13 @@
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.19",
         "resolve-url-loader": "^3.1.0",
-        "vue-template-compiler": "^2.7.16"
+        "vue-loader": "^17.4.2",
+        "vue-template-compiler": "^2.7.16",
+        "vueify": "^9.4.1"
+    },
+    "dependencies": {
+        "vue": "^3.4.26",
+        "vue-axios": "^3.5.2",
+        "vue-router": "^4.3.2"
     }
 }
