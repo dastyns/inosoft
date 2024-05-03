@@ -1,14 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <link href="css/app.css" type="text/css" rel="stylesheet" />
-</head>
+        <title>Laravel</title>
 
-<body style='background-color: white'>
-    <div id="app">
-        <read></read>
-    </div>
-</body>
-<script src="/js/app.js" type="text/javascript"></script>
-
+    </head>
+    <body class="antialiased">
+        <div id="app">
+            <mainapp></mainapp>
+        </div>
+    </body>
+    <script src= "js/app.js" type="text/javascript"></script> 
 </html>
