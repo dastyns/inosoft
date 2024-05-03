@@ -20,8 +20,6 @@
     </v-row>
   </v-container>
 </v-app>
-
- 
 </template>
 
 <script>
@@ -52,7 +50,6 @@ export default {
         { text: 'Grade', value: 'grade' },
         { text: 'Connection', value: 'connection' },
         { text: 'Size', value: 'size' },
-        // Add more header fields as needed
       ]
     }
   }
@@ -70,34 +67,34 @@ export default {
   .search-input {
   width: 100%;
   max-width: 400px;
-  margin-bottom: 0px; /* Adjust spacing */
+  margin-bottom: 0px;
 }
 
-/* Custom styles for data table */
+
 .custom-table {
-  border: 1px solid #ddd; /* Add border */
-  border-radius: 5px; /* Add border-radius */
-  overflow: hidden; /* Hide overflow */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .custom-table .v-data-table-header {
-  background-color: #f5f5f5; /* Change header background color */
+  background-color: #f5f5f5;
 }
 
 .custom-table .v-data-table-header th {
-  color: #333; /* Change header text color */
+  color: #333;
 }
 
 .custom-table .v-data-table-header th .column-text {
-  font-weight: bold; /* Make header text bold */
+  font-weight: bold;
 }
 
 .custom-table .v-data-table-row {
-  transition: background-color 0.3s ease; /* Add transition effect */
+  transition: background-color 0.3s ease;
 }
 
 .custom-table .v-data-table-row:hover {
-  background-color: #f0f0f0; /* Change row background color on hover */
+  background-color: #f0f0f0;
 }
 
 </style>

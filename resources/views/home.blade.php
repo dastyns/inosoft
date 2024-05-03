@@ -10,7 +10,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-    <title>Home</title>
+    <title>Pipesales</title>
     <style>
         .product-item {
             display: flex;
@@ -23,7 +23,6 @@
 
         .product-quantity {
             margin-left: 10px;
-            /* Add margin between name and quantity */
         }
     </style>
 </head>
