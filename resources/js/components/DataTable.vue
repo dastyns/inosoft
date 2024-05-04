@@ -1,25 +1,23 @@
 <template>
-<v-app>
-  <v-container>
-    <v-row class="end">
-      <v-col cols="12" md="6" class="end">
-        <v-text-field v-model="search" single-line placeholder="Search" class="search-input"></v-text-field>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12">
-        <v-data-table
-          :headers="headers"
-          :items="data"
-          :loading="loading"
-          :search="search"
-          :no-data-text="'No data available'"
-          class="elevation-1 custom-table">
-        </v-data-table>
-      </v-col>
-    </v-row>
-  </v-container>
-</v-app>
+  <v-app>
+    <v-container>
+      <v-row class="m-0">
+        <v-col cols="12" md="6" align="left">
+          <h2>List of Products</h2>
+        </v-col>
+        <v-col cols="12" md="6" align="right">
+          <v-text-field v-model="search" single-line placeholder="Search" class="search-input"></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <v-data-table :headers="headers" :items="data" :loading="loading" :search="search"
+            :no-data-text="'No data available'" :items-per-page="-1" class="elevation-1 custom-table">
+          </v-data-table>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
@@ -44,8 +42,8 @@ export default {
         { text: 'Quantity', value: 'qty' },
         { text: 'Quantity Unit', value: 'qty_unit' },
         { text: 'Country Name', value: 'country_name' },
-        { text: 'Item Code', value: 'Item code' },
-        { text: 'Item Desc', value: 'Item desc' },
+        { text: 'Item Code', value: 'item_code' },
+        { text: 'Item Desc', value: 'item_desc' },
         { text: 'Product Type', value: 'product_type' },
         { text: 'Grade', value: 'grade' },
         { text: 'Connection', value: 'connection' },
